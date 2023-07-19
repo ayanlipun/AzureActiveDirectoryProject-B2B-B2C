@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureADWeb", "AzureADWeb\AzureADWeb.csproj", "{CD6AFF73-43DF-410D-B1DB-BB4DBECA3165}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureADWeb", "AzureADWeb\AzureADWeb.csproj", "{CD6AFF73-43DF-410D-B1DB-BB4DBECA3165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureAdApi", "AzureAdApi\AzureAdApi.csproj", "{5B56202C-7C61-43A9-97E5-9E98501B471B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureAdApi", "AzureAdApi\AzureAdApi.csproj", "{5B56202C-7C61-43A9-97E5-9E98501B471B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureADB2CWeb", "AzureADB2CWeb\AzureADB2CWeb.csproj", "{55742183-E382-43C0-B699-799F5584DB2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5B56202C-7C61-43A9-97E5-9E98501B471B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B56202C-7C61-43A9-97E5-9E98501B471B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B56202C-7C61-43A9-97E5-9E98501B471B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55742183-E382-43C0-B699-799F5584DB2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55742183-E382-43C0-B699-799F5584DB2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55742183-E382-43C0-B699-799F5584DB2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55742183-E382-43C0-B699-799F5584DB2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
