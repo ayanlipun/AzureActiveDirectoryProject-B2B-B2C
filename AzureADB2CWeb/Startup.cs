@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using AzureADB2CWeb.Data;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.EntityFrameworkCore;
 
 namespace AzureADB2CWeb
 {
@@ -13,10 +15,15 @@ namespace AzureADB2CWeb
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDBContext>(options =>
+            options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+
+
             services.AddHttpClient();
             //Applicaation/ClientId -3fa6a6ad-c3bf-4e06-b4c2-0e7f9b4e1abd
             //Auth end point  : https://login.microsoftonline.com/8a5705ad-421e-43c6-87a1-c8a714fe132a/oauth2/v2.0/authorize
             services.AddControllersWithViews();
+
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
